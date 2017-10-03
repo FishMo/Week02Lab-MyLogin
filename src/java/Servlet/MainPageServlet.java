@@ -20,8 +20,8 @@ public class MainPageServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
             
-        request.setAttribute("message", "You have successfully loged out!");           
-        getServletContext().getRequestDispatcher("/WEB-INF/login.jsp").forward(request, response);
+     //   request.setAttribute("message", "You have successfully loged out!");           
+     //   getServletContext().getRequestDispatcher("/WEB-INF/login.jsp").forward(request, response);
     }
 
 

@@ -13,11 +13,9 @@
     </head>
     <body>
         <h1>Main Page</h1>
-        <h4>Hello, ${uname} </h4>
-        <form action="MainPage" method="get">
-            <input type="submit" value="Logout">
-        </form>
-       
-        
+        <h4>Hello,${uname}
+        <a href ="Login?message=You have successfully loged out!" >Log out</a>
+         </h4>
+
     </body>
 </html>

@@ -51,6 +51,8 @@ public class LoginServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
+        String logoutMessage = request.getParameter("message");
+        request.setAttribute("message",logoutMessage );
         getServletContext().getRequestDispatcher("/WEB-INF/login.jsp").forward(request,response);
        
 
@@ -82,7 +84,7 @@ public class LoginServlet extends HttpServlet {
             UserService(request,response);
         }
         
-        response.sendError(HttpServletResponse.SC_NOT_FOUND);
+     
     }
 
 
